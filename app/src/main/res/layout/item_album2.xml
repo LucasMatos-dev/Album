@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:gravity="center_vertical">
+
+    <!-- Imagem da Capa do Álbum -->
+    <ImageView
+        android:id="@+id/albumCover"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="Capa do Álbum"
+        android:src="@android:drawable/ic_menu_gallery" />
+
+    <!-- Nome do Álbum -->
+    <TextView
+        android:id="@+id/albumName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Nome do Álbum"
+        android:textSize="28sp" />
+</LinearLayout>

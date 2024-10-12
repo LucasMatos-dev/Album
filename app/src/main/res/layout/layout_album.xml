@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Top Layout with Button and TextView -->
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true">
+
+        <!-- Botão de voltar -->
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:background="@null"
+            android:contentDescription="@string/back_button_description"
+            android:scaleType="centerInside"
+            android:src="@drawable/setavoltar" />
+
+        <!-- Título do álbum -->
+        <TextView
+            android:id="@+id/albumAberto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Nome"
+            android:textSize="34sp" />
+
+        <!-- Primeiro botão adicional (compartilhar) ao lado direito -->
+
+        <!-- Segundo botão adicional (editar) ao lado do botão compartilhar -->
+        <ImageButton
+            android:id="@+id/button_compartilhar"
+            android:layout_width="33dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="13dp"
+            android:background="@null"
+            android:contentDescription="Compartilhar"
+            android:scaleType="centerInside"
+            android:src="@drawable/compartilharbutton" />
+
+        <ImageButton
+            android:id="@+id/button_editar"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="-5dp"
+            android:layout_toStartOf="@id/button_compartilhar"
+            android:background="@null"
+            android:contentDescription="Editar"
+            android:scaleType="centerInside"
+            android:src="@drawable/editarbutton" />
+
+    </RelativeLayout>
+
+    <!-- GridLayout for images -->
+    <GridLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_layout"
+        android:layout_marginTop="16dp"
+        android:columnCount="2"
+        android:orientation="horizontal">
+
+        <!-- Image Views -->
+        <ImageView
+            android:id="@+id/image_album"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:layout_margin="4dp"
+            android:layout_columnWeight="1"
+            android:src="@drawable/imagem2" />
+
+        <ImageView
+            android:id="@+id/image_album2"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:layout_margin="4dp"
+            android:layout_columnWeight="1"
+            android:src="@drawable/imagem1" />
+
+        <ImageView
+            android:id="@+id/image_album3"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:layout_margin="4dp"
+            android:layout_columnWeight="1"
+            android:src="@drawable/imagem2" />
+
+        <ImageView
+            android:id="@+id/image_album4"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:layout_margin="4dp"
+            android:layout_columnWeight="1"
+            android:src="@drawable/imagem1" />
+
+        <ImageView
+            android:id="@+id/image_album5"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:layout_margin="4dp"
+            android:layout_columnWeight="1"
+            android:src="@drawable/imagem2" />
+
+    </GridLayout>
+
+</RelativeLayout>

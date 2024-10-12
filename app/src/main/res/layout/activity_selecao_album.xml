@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Layout Horizontal para o Botão de Voltar e o Título -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Botão de Voltar -->
+        <ImageButton
+            android:id="@+id/botaoVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Voltar"
+            android:src="@android:drawable/ic_menu_revert" />
+
+        <!-- Título da Tela -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:text="Salvar em Álbum"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <!-- RecyclerView para a lista de álbuns -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAlbuns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botão para Criar Novo Álbum -->
+    <Button
+        android:id="@+id/botaoCriarAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Criar Novo Álbum" />
+
+</LinearLayout>
