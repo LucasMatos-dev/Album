@@ -13,9 +13,9 @@
         android:theme="@style/Theme.Album"
         tools:targetApi="31">
 
-        <!-- Definir a nova tela ImageSaveActivity como a tela principal -->
+        <!-- Definir a MainActivity como a tela principal -->
         <activity
-            android:name=".ImageSaveActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,9 +23,9 @@
             </intent-filter>
         </activity>
 
-        <!-- Activity da tela principal (MainActivity) -->
+        <!-- Activity para salvar imagens (ImageSaveActivity) -->
         <activity
-            android:name=".MainActivity"
+            android:name=".ImageSaveActivity"
             android:exported="true" />
 
         <!-- Activity para detalhes do álbum -->
